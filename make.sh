@@ -25,6 +25,7 @@ select yn in "Y" "N"; do
     case $yn in
     Y)
         make
+        rm -rf make.sh
         break
         ;;
     N)
