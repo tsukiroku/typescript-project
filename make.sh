@@ -11,6 +11,7 @@ ROOT_DIR="./"
 function make {
     rm -rf $ROOT_DIR/*
     rm -rf .gitignore
+    rm -rf .github
     touch index.ts
     mkdir src
     mkdir .github && mkdir .github/workflows
