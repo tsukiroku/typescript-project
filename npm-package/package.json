@@ -9,7 +9,7 @@
         "build": "if [ -d dist ]; then rm -rf dist; npm run build:tsc; else npm run build:tsc; fi",
         "build:windows": "@echo off && IF exist dist ( rd dist; npm run build:tsc ) ELSE ( npm run build:tsc ) && @echo on",
         "build:tsc": "tsc -p tsconfig.json",
-        "publish": "npm run build && npm publish",
+        "npm:publish": "npm run build && npm publish",
         "test": "npm run build && npm run dist/test/test.ts"
     },
     "repository": {
