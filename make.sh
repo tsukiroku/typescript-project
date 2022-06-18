@@ -21,7 +21,7 @@ function make {
     
     if [ "$RAW" = "npm-package" ]; then
         mkdir .github && mkdir .github/workflows
-        curl -sS "https://recalculated.github.io/typescript-project/npm-package/npm_publish.yml" >>$ROOT_DIR/.github/workflows/npm_publish.yml >>$ROOT_DIR/.gitignore
+        curl -sS "https://recalculated.github.io/typescript-project/npm-package/npm_publish.yml" >>$ROOT_DIR/.github/workflows/npm_publish.yml
         echo "template has been created. ($RAW)"
     fi
 }
